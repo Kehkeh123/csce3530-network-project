@@ -37,7 +37,7 @@ The Gateway Router provides core routing, dynamic host configuration, and Networ
 ```text
 📦 bookclub-network-project
  ┣ 📂 design-files
- ┃ ┗ 📜 BookClub_Topology.pkt        <-- Main Cisco Packet Tracer project save file
+ ┃ ┗ 📜 BookClub_Topology.pdf        <-- Main Cisco Packet Tracer project save file
  ┣ 📂 configuration-logs
  ┃ ┗ 📜 gateway_router_config.txt     <-- Saved Cisco IOS CLI running configuration
  ┣ 📂 documentation
