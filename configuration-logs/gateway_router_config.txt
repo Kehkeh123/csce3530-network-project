@@ -1,0 +1,35 @@
+! --- CSCE 3530 Final Project ---
+! --- Router0 Running Configuration Log ---
+!
+hostname Router0
+!
+! --- DHCP Service Configuration ---
+ip dhcp excluded-address 192.168.1.1 192.168.1.10
+!
+ip dhcp pool BOOKNET_POOL
+ network 192.168.1.0 255.255.255.0
+ default-router 192.168.1.1
+ dns-server 192.168.1.10
+!
+! --- Interface Configurations ---
+interface GigabitEthernet0/0/0
+ description WAN_TO_EXTERNAL_INTERNET
+ ip address dhcp
+ ip nat outside
+ duplex auto
+ speed auto
+ no shutdown
+!
+interface GigabitEthernet0/0/1
+ description LAN_TO_LIBRARY_SWITCH
+ ip address 192.168.1.1 255.255.255.0
+ ip nat inside
+ duplex auto
+ speed auto
+ no shutdown
+!
+! --- NAT / PAT Overload Routing Rules ---
+access-list 1 permit 192.168.1.0 0.0.0.255
+ip nat inside source list 1 interface GigabitEthernet0/0/0 overload
+!
+end

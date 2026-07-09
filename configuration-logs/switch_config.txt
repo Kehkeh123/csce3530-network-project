@@ -1,0 +1,29 @@
+! --- CSCE 3530 Final Project ---
+! --- Switch0 Port Mapping Log ---
+!
+hostname Switch0
+!
+! --- Core Uplink to Gateway Router ---
+interface GigabitEthernet0/1
+ description UPLINK_TO_ROUTER0_G0/0/1
+ switchport mode access
+!
+! --- Internal Wired Infrastructure Endpoints ---
+interface FastEthernet0/1
+ description WIRED_STAFF_DESKTOP_PC0
+ switchport mode access
+!
+interface FastEthernet0/2
+ description WIRED_PUBLIC_LOBBY_PC1
+ switchport mode access
+!
+interface FastEthernet0/3
+ description WIRED_LIBRARY_SERVER0
+ switchport mode access
+!
+! --- Internal Wireless Bridge ---
+interface FastEthernet0/4
+ description UPLINK_TO_WIRELESS_ACCESS_POINT
+ switchport mode access
+!
+end

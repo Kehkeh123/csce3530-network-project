@@ -1,0 +1,41 @@
+========================================================================
+CSCE 3530 Final Project: Server0 Static System & Protocol Services Log
+========================================================================
+
+[1] STATIC IPv4 CONFIGURATION:
+------------------------------------------------------------------------
+IP Address      : 192.168.1.10
+Subnet Mask     : 255.255.255.0
+Default Gateway : 192.168.1.1
+DNS Server      : 192.168.1.10
+
+[2] LOCALIZED DOMAIN NAME SYSTEM (DNS) RESOURCE RECORDS:
+------------------------------------------------------------------------
+Service Status  : ON
+Domain Name     : bookclub.local
+Record Type     : A Record (Address)
+Target Binding  : 192.168.1.10
+
+[3] APPLICATION LAYER WEB CATALOG RESOURCE (HTTP/HTTPS index.html):
+------------------------------------------------------------------------
+Service Status  : ON
+File Target     : /html/index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Club Library Network</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f4; }
+        h1 { color: #276436; }
+        .container { background: white; padding: 30px; display: inline-block; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Book Club Library Catalog!</h1>
+        <p>Testing Status: Successful Application-Layer Name Resolution.</p>
+        <p>Network Parameter Context: 192.168.1.10 (Static Service Node)</p>
+    </div>
+</body>
+</html>
