@@ -32,14 +32,15 @@ The Gateway Router provides core routing, dynamic host configuration, and Networ
 - ICMP end-to-end routing connectivity verification
 - Local application-layer name resolution and web traffic testing
 
-## Repository Structure
+## 📁 Repository Directory Structure
 
 ```text
-design-files/
-  Cisco Packet Tracer save file (.pkt) and topology layouts
-
-configuration-logs/
-  Saved Cisco IOS CLI running configurations for the gateway and switch nodes
-
-documentation/
-  Project proposal outlines, milestone briefs, and final project analysis report
+📦 bookclub-network-project
+ ┣ 📂 design-files
+ ┃ ┗ 📜 BookClub_Topology.pkt        <-- Main Cisco Packet Tracer project save file
+ ┣ 📂 configuration-logs
+ ┃ ┗ 📜 gateway_router_config.txt     <-- Saved Cisco IOS CLI running configuration
+ ┣ 📂 documentation
+ ┃ ┣ 📜 Project_Proposal.pdf          <-- Approved project proposal outline
+ ┃ ┗ 📜 Final_Project_Report.pdf      <-- Comprehensive protocol analysis report
+ ┗ 📜 README.md                       <-- Repository homepage and setup guide
